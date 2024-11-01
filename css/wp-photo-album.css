@@ -1,0 +1,207 @@
+.wp-photo-album{
+    padding: 0 0 5%;
+    text-align: center;
+}
+
+.album-nav{
+    padding:5px;
+    font-size:18px;
+}
+
+.album-h1{
+    text-align: center;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.album-preview{
+    margin-bottom: 5px;
+    height:235px;
+}
+
+.photo-preview{
+    text-align: center;
+    display:inline-block;
+    vertical-align: top;
+    margin-bottom: 5px;
+    height:200px;
+}
+
+.album-preview .photo-thumb, .photo-preview .photo-thumb{
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    padding: 0 !important;
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.album-preview .photo-thumb img, .photo-preview .photo-thumb img{
+    width: 100%;
+}
+
+
+/*********************
+* Photo pop up
+*********************/
+.wp-photo-album-bg-layer{
+    position: fixed;
+    background-color:RGBa(0,0,0,0.7);
+    z-index: 9998;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display:none;
+}
+
+.popup-photo{
+    display:none;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: tahoma,arial,verdana,sans-serif,Lucida Sans;
+    font-size: 11px;
+}
+
+
+.wp-photo-album-item{
+    max-width: 654px;
+    position: relative;
+    margin:11px auto 5px;
+    z-index: 99999;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    padding: 15px 25px;
+}
+
+
+.wp-photo-album-item .photo-summary{
+    text-align: left;
+}
+
+.wp-photo-album-item .photo-position{
+    color: #45688E;
+    font-weight: bold;
+}
+
+.photo-item-parent{
+    text-align:center;
+}
+
+.wp-photo-album-item .photo-item{
+    max-width:100%;
+    padding: 15px 0 0;
+    transition: border 0.2s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.wp-photo-album-item .photo-close{
+    float:right;
+    color: #2B587A;
+    cursor:pointer;
+}
+
+.wp-photo-album-item .photo-close:hover{
+    text-decoration: underline;
+}
+
+
+.wp-photo-album-item #next-photo, .wp-photo-album-item #previous-photo{
+    display:none
+}
+
+
+
+.wp-photo-album-item .photo-additional-info{
+    margin-top:25px;
+}
+
+
+.wp-photo-album-item .photo-description{
+    padding-bottom:5px;
+}
+
+.wp-photo-album-item .photo-pubdate{
+    color: #777;
+}
+
+
+.album-item-separate .photo-close{
+    display:none;
+}
+
+.wp-photo-album-item #comment{
+    max-width:100%;
+}
+
+
+.wp-photo-album-item #respond #submit{
+    padding: 6px 16px 7px;
+    margin: 0px;
+    font-size: 11px;
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: medium none;
+    font-family: tahoma,arial,verdana,sans-serif,Lucida Sans;
+    vertical-align: top;
+    overflow: visible;
+    line-height: 13px;
+    text-decoration: none;
+    background: #6383A8 none repeat scroll 0% 0%;
+    color: #FFF;
+    border: 0px none;
+    border-radius: 2px;
+    transition: background-color 100ms ease-in-out 0s;
+}
+
+.wp-photo-album-item #respond h3{
+    font-size: 11px !important;
+    color: #36638E;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.centered{
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#main_content{
+    display:block;
+}
+
+
+
+
+
+.show-more-photos{
+    display:block;
+    width:100%;
+}
+
+
+@media (max-width:768px){
+    .wp-photo-album-item{
+        max-width: 98%;
+    }
+
+
+    .album-preview, .photo-preview,
+    .photo-preview .photo-thumb,
+    .album-preview .photo-thumb
+    {
+        height:auto;
+        max-height: none;
+    }
+}
